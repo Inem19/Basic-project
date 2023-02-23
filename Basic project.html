@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Awareness 💆‍♀️</title>
+    <style>
+      body {
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+      h1 {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: #8b5d46;
+        margin-top: 0;
+        font-weight: 700;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px #ccc;
+        max-width: 100%;
+      }
+      p {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 16px;
+        font-family: monospace;
+        padding: 10px;
+        font-weight: medium;
+      }
+      a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-radius: 10px;
+        border: 1px solid #8b5d46;
+        margin: 10px 15px;
+        color: #8b5d46;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+        background: #8b5d46;
+        cursor: pointer;
+        color: white;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: #3d3d3d;
+        border: 1px solid #3d3d3d;
+        border-radius: 10px;
+        line-height: 30px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        box-shadow: 0px 8px 8px rgba(38, 38, 38, 0.023);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #3d3d3d;
+        background: white;
+        cursor: pointer;
+      }
+      footer {
+        font-family: monospace;
+        font-size: 16px;
+        margin: 0px;
+      }
+      .capsule {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      .highlight {
+        color: #3d3d3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="capsule">
+      <h1>💆‍♀️ <br />Self Care Check-in</h1>
+      <h2>
+        <em>Let's Talk About Mental Health!</em>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/050/068/original/mental_health.jpeg?1666696338"
+        alt="memtal health"
+        width="400"
+      />
+      <p>
+        Mental health includes our emotional, psychological, and social
+        well-being. It affects how we think, feel, and act. It also helps
+        determine how we handle stress, relate to others, and make choices.
+        Mental health is important at every stage of life, from childhood and
+        adolescence through adulthood.
+      </p>
+      <a
+        href="https://www.mentalhealth.gov/basics/what-is-mental-health"
+        target="_blank"
+      >
+        Learn More On MentalHealth.gov
+      </a>
+      <button>👉 Book an appointment with a therapist NOW!!! 👈</button>
+      <footer>
+        <p>
+          👩‍💻 Coded by
+          <span class="highlight"><strong>Aniebiet-abasi Akpan</strong></span>
+        </p>
+      </footer>
+    </div>
+    <script>
+      function bookAppointment() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let message = `Thank you ${name}! We will be in touch via email, KEEP SHINING🥰`;
+        alert(message);
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", bookAppointment);
+    </script>
+  </body>
+</html>
